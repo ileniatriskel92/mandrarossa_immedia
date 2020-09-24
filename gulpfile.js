@@ -33,8 +33,6 @@ var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 gulp.task('scripts', function () {
     return gulp.src([
-
-        'node_modules/bootstrap/dist/js/bootstrap.js',
         'dev/js/src/*.js',
         'dev/js/main.js'
 
@@ -47,9 +45,6 @@ gulp.task('scripts', function () {
 var csso = require('gulp-csso');
 gulp.task('styles', function () {
     return gulp.src([
-
-        'node_modules/bootstrap/dist/css/bootstrap.css',
-
         'dev/css/**/*.css'])
         .pipe(concat('main.css'))
         .pipe(csso())

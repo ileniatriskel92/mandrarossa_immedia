@@ -4,7 +4,8 @@
   "description": "mandrarossa test website",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "owl.carousel": "^2.3.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,7 +13,6 @@
   "author": "ilenia scala",
   "license": "ISC",
   "devDependencies": {
-    "bootstrap": "^3.4.1",
     "breakpoint-sass": "^2.7.1",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
