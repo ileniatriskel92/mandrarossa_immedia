@@ -1,13 +1,20 @@
 $(document).ready(function(){
-    $("#owl-demo").owlCarousel({
-        center: true,
-        items: 2,
-        loop: true,
-        margin: 100,
-        responsive:{
-            600:{
-                items: 4
-            }
+    $('#world-slider').slick({
+        centerMode: true,
+        variableWidth: true,
+        infinite: true,
+        slidesToShow: 2
+      });
+
+      $('#choice-slider').slick({
+        infinite: false,
+        slidesToShow: 2.8
+      });
+
+    $( window ).resize(function()  {
+        var windowWidth = $( window ).width();
+        if (windowWidth <= 376) {
+            console.log('mobileBreak')
         }
     });
 });

@@ -1,1 +1,97 @@
 @import '../scss/variables';
+
+//icon
+@font-face {
+    font-family: '#{$icomoon-font-family}';
+    src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?r2yios');
+    src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?r2yios#iefix') format('embedded-opentype'),
+      url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?r2yios') format('truetype'),
+      url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?r2yios') format('woff'),
+      url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?r2yios##{$icomoon-font-family}') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: '#{$icomoon-font-family}' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-facebook {
+    &:before {
+      content: $icon-facebook; 
+    }
+  }
+  .icon-hamburger_icon {
+    &:before {
+      content: $icon-hamburger_icon; 
+    }
+  }
+  .icon-ico_play {
+    &:before {
+      content: $icon-ico_play; 
+    }
+  }
+  .icon-instagram {
+    &:before {
+      content: $icon-instagram; 
+    }
+  }
+  .icon-twitter {
+    &:before {
+      content: $icon-twitter; 
+    }
+  }
+  .icon-youtube {
+    &:before {
+      content: $icon-youtube; 
+    }
+  }
+  .icon-close {
+    &:before {
+      content: $icon-close; 
+    }
+  }  
+
+.title {
+    font-size: 50px;
+    line-height: 65px;
+    letter-spacing: -1.5px;
+    color: $brown;
+    font-family: $playfair;
+
+    &-section {
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 1.5px;
+        color: $brown;
+        font-family: $montserrat;
+    }
+}
+
+.subtitle {
+    font-size: 15px;
+    line-height: 30px;
+    color: $grey;
+    font-family: $poppins;
+}
+
+.btn {
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 13px;
+    letter-spacing: 1.6px;
+    color: $yellow;
+    font-family: $montserrat;
+}

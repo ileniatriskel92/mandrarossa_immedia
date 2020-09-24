@@ -1,0 +1,53 @@
+@import './variables';
+@import './mixin';
+
+header {
+    padding: 60px 60px 0;
+    position: fixed;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    &-container_links {
+        width: 50%;
+        justify-content: flex-end;
+    }
+
+    &-details {
+        display: block;
+        color: $white;
+        font-family: $playfair;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        line-height: 15px;
+        text-align: right;
+    }
+
+    &-link {
+        margin-right: 30px;
+
+        a {
+            color: $white;
+            font-family: $montserrat;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            line-height: 14px;
+        }
+
+        .open-nav {
+            @include icon(after, $icon-hamburger_icon);
+
+            &::after {
+                color: $white;
+            }
+        }
+    }
+}

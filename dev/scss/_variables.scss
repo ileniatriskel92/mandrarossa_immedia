@@ -1,3 +1,25 @@
 //colors basic
-$black: #000;
-$white: #fff;
+$black: #000000;
+$white: #ffffff;
+
+//colors mandrarossa
+$brown: #311E0B;
+$grey: #555555;
+$yellow: #B89151;
+
+//icon
+$icomoon-font-family: "mandrarossa-icon" !default;
+$icomoon-font-path: "../../assets/fonts" !default;
+
+$icon-facebook: "\e900";
+$icon-hamburger_icon: "\e901";
+$icon-ico_play: "\e902";
+$icon-instagram: "\e903";
+$icon-twitter: "\e904";
+$icon-youtube: "\e905";
+$icon-close: "\e906";
+
+//fonts
+$playfair: 'Playfair Display', serif; //  replace => Kumlien Pro Medium
+$montserrat: 'Montserrat', sans-serif; // replace => Bicyclette Bold
+$poppins: 'Poppins', sans-serif; // replace => SF NS Display Regular

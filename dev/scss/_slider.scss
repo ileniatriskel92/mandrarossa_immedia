@@ -1,0 +1,43 @@
+
+.slick-slide {
+    padding: 0 60px !important;
+
+    &.item-container {
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+#world-slider {
+    .item {
+        &-img {
+            max-width: 100%;
+            height: 500px;
+            margin: 10px;
+        }
+    }
+    .slick-current {
+        img {
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+        }
+    }
+}
+
+#choice-slider {
+    .item {
+        &-img {
+            max-width: 100%;
+            height: 600px;
+            margin: 10px;
+            display: block;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .slick-track {
+        transform: translate3d(330px, 0px, 0px);
+    }
+}
