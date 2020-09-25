@@ -17,4 +17,9 @@ $(document).ready(function(){
             console.log('mobileBreak')
         }
     });
+
+    $('.js-menuToggleClass').click(function() {
+      $('.js-menu').toggleClass('open');
+      $('.js-header').toggleClass('menu-open');
+    });
 });
