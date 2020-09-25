@@ -396,12 +396,10 @@ header {
         display: none; }
     .nav-logo_black {
       display: none; }
-      .menu-open .nav-logo_black {
-        display: none !important; }
-        @media (max-width: 767.98px) {
-          .menu-open .nav-logo_black {
-            display: block;
-            width: 155px !important; } }
+      @media (max-width: 767.98px) {
+        .menu-open .nav-logo_black {
+          display: block;
+          width: 155px !important; } }
       .darkHeader .nav-logo_black {
         display: block; }
         .darkHeader .nav-logo_black img {

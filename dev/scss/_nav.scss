@@ -175,8 +175,6 @@ header {
             display: none;
 
             .menu-open & {
-                display: none !important;
-
                 @include media-breakpoint-down(sm) {
                     display: block;
                     width: 155px !important;
