@@ -22,4 +22,16 @@ $(document).ready(function(){
       $('.js-menu').toggleClass('open');
       $('.js-header').toggleClass('menu-open');
     });
+
+    $(window).scroll(function() {    
+      var scroll = $(window).scrollTop();    
+      console.log(scroll);
+      if (scroll >= 500) {
+          $('.js-header').addClass('darkHeader');
+          $('.js-backHeader').addClass('active');
+      } else {
+        $('.js-header').removeClass('darkHeader');
+        $('.js-backHeader').removeClass('active');
+      }
+    });
 });

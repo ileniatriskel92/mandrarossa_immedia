@@ -18,6 +18,36 @@ body {
     position: relative;
 }
 
+.shape {
+    &::after {
+        content: '';
+        height: 700px;
+        width: 820px;
+        background-color: #F9F8F1;
+        position: absolute;
+        top: -16%;
+        right: 34%;
+
+        @include media-breakpoint-down(sm) {
+            top: 54%;
+            right: 0;
+            height: 299px;
+            width: 485px;
+        }
+    }
+}
+
+.container {
+    width: 1160px;
+    margin: auto;
+    z-index: 1;
+
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+    }
+    
+}
+
 .pointer {
     cursor: pointer;
 }
@@ -52,6 +82,16 @@ a {
         .video {
             width: 100%;
             height: auto;
+        }
+    }
+
+    &-innovation {
+        position: relative;
+        margin: 170px 0;
+
+        @include media-breakpoint-down(sm) {
+            margin: 60px 0;
+            padding: 0 30px 0 50px;
         }
     }
 }
@@ -108,4 +148,94 @@ a {
             }
         }
     }
+}
+
+.tag {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+
+    @include media-breakpoint-down(sm) {
+        position: initial;
+    }
+
+    span {
+        color: $brown;
+        font-family: $montserrat;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        line-height: 12px;
+        border-bottom: 1px solid $brown;
+        text-transform: uppercase;
+    }
+}
+
+.innovation {
+    &-container {
+        @include media-breakpoint-down(sm) {
+            flex-direction: column;
+        }
+    }
+
+    &-text {
+        width: 460px;
+
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
+
+        .title {
+            color: $brown;
+            font-family: $playfair;
+            font-size: 60px;
+            font-weight: 500;
+            letter-spacing: -1.5px;
+            line-height: 65px;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 40px;
+                font-weight: 500;
+                letter-spacing: -1px;
+                line-height: 35px;
+            }
+        }
+
+        .subtile {
+            color: #555555;
+            font-family: $poppins;
+            font-size: 15px;
+            letter-spacing: 0;
+            line-height: 30px;
+
+            @include media-breakpoint-down(sm) {
+                max-width: 295px;
+            }
+        }
+
+        .btn {
+            @include media-breakpoint-down(sm) {
+               text-align: right;
+               display: block;
+               padding: 30px 0;
+            }
+        }
+    }
+
+    &-img {
+        margin-left: 60px;
+
+        @include media-breakpoint-down(sm) {
+            width: 280px;
+            margin-left: 140px;
+
+            img {
+                width: 280px;
+            }
+         }
+    }
+}
+
+.z-index-2 {
+    z-index: 2;
 }
