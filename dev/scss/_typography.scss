@@ -172,7 +172,7 @@
   position: absolute;
   top: 40px;
   z-index: 1;
-  left: 40px;
+  left: 10%;
 
   @include media-breakpoint-down(sm) {
     top: 15px;

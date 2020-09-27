@@ -81,7 +81,6 @@ a {
         @include media-breakpoint-down(sm) {
             min-height: 600px;
         }
-        
 
         .video {
             width: 100%;
@@ -277,6 +276,7 @@ a {
 
         @include media-breakpoint-down(sm) {
             height: 630px;
+            padding: 0;
         }
     }
 }

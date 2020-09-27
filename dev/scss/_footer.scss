@@ -1,0 +1,113 @@
+@import './variables';
+@import './mixin';
+
+.footer {
+    &-container {
+        background-color: $brown2;
+        color: $white;
+        padding: 4% 4% 70px;
+        font-family: $montserrat;
+        justify-content: space-between;
+
+        @include media-breakpoint-down(sm) {
+            display: block;
+            text-align: center;
+            padding: 0;
+        }
+
+        span {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 14px;
+            letter-spacing: 0.35px;
+            line-height: 14px;
+        }
+
+        .company {
+            align-items: end;
+
+            @include media-breakpoint-down(sm) {
+                display: block;
+                padding: 50px 0;
+            }
+        }
+    }
+}
+
+.marchio {
+    width: 50px;
+    margin-right: 30px;
+
+    @include media-breakpoint-down(sm) {
+        width: 70px;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+}
+
+.social {
+    text-align: right;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 20px;
+
+    @include media-breakpoint-down(sm) {
+        text-align: center;
+        border-bottom: none;
+        border-top : 1px solid rgba(255, 255, 255, 0.5);
+        padding: 45px 0 67px;
+    }
+
+    a {
+        &:before {
+            color: $white;
+            width: 20px;
+            padding: 10px;
+
+            @include media-breakpoint-down(sm) {
+                width: 23px;
+            }
+        }
+    }
+}
+
+.links {
+    @include media-breakpoint-down(sm) {
+        text-align: center;
+        padding-bottom: 60px;
+    }
+}
+
+.link {
+    font-size: 13px;
+    letter-spacing: 0.33px;
+    line-height: 13px;
+    padding: 25px;
+    color: $white;
+
+    &:last-child {
+        padding-right: 0;
+
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        text-align: center;
+    }
+
+    &-container {
+        padding-top: 25px;
+    }
+
+    &-en {
+        display: none;
+
+        @include media-breakpoint-down(sm) {
+            display: block !important; 
+            text-align: right;
+            padding-right: 23% !important;
+        }
+    }
+}
+
