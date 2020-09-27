@@ -1,0 +1,53 @@
+
+.tabs {
+    width: 100%;  
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    li {
+        list-style: none;
+        height: 610px;
+    }
+
+    input[type="radio"] {
+      position: absolute;
+      top: 0;
+      left: -9999px;
+    }
+
+    label {
+        color: $brown;
+        padding: 14px 21px;
+
+      &:hover {
+        color: #B89151;
+      }
+    }
+
+    .tab-content{
+      z-index: 2;
+      display: none; 
+      overflow: hidden;
+      width: 100%;
+      font-size: 17px;
+      line-height: 25px;
+      padding: 25px;  
+      position: absolute;
+      top: 53px;
+      left: 0; 
+    }
+
+    [id^="tab"]:checked + label { 
+      top: 0;
+      padding-top: 17px; 
+      color: #B89151;
+    }
+
+    [id^="tab"]:checked ~ [id^="tab-content"] {
+      display: block;
+    }
+  }

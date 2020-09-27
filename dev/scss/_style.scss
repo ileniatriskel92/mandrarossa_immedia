@@ -22,11 +22,11 @@ body {
     &::after {
         content: '';
         height: 700px;
-        width: 820px;
+        width: 784px;
         background-color: #F9F8F1;
         position: absolute;
-        top: -11%;
-        right: 10%;
+        top: -12%;
+        right: 15%;
 
         @include media-breakpoint-down(sm) {
             top: 54%;
@@ -42,9 +42,12 @@ body {
     margin: auto;
     z-index: 1;
     position: relative;
+    padding: 0 4%;
+    max-width: 100%;
 
     @include media-breakpoint-down(sm) {
         width: 100%;
+        padding: 0;
     }
     
 }
@@ -149,6 +152,23 @@ a {
             display: none;
         }
 
+        .research {
+            &-container {
+                margin-top: 90px;
+            }
+
+            &-text {
+                .title {
+                    padding-top: 100px;
+                    margin-top: 0;
+
+                    @include media-breakpoint-down(sm) {
+                        padding-top: 0;
+                    }
+                }
+            }
+        }
+
         .research_content {
             display: flex;
             padding: 0 140px;
@@ -167,18 +187,6 @@ a {
 
                 &:last-child {
                     margin: 160px 0 0 20px;
-                }
-            }
-
-            &-text {
-                h2 {
-                    margin: 30px 0 20px;
-                    color: $brown;
-                    font-family: $playfair;
-                    font-size: 40px;
-                    font-weight: 500;
-                    letter-spacing: -1px;
-                    line-height: 48px;
                 }
             }
 
@@ -207,12 +215,69 @@ a {
 
         &-mob {
             display: none;
+            background-image: url('../../assets/img/back-research.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 170px 0;
+            margin: 60px 0;
 
             @include media-breakpoint-down(sm) {
                 display: block;
             }
+
+            &-container {
+                width: 320px;
+                margin: auto;
+                color: $white;
+                text-align: center;
+            }
+
+            .title {
+                color: #F9F8F1;
+                font-family: $playfair;
+                font-size: 40px;
+                font-weight: 500;
+                letter-spacing: -1px;
+                line-height: 35px;
+                margin-bottom: 25px;
+            }
+
+            .subtitle {
+                font-size: 15px;
+                letter-spacing: 0;
+                line-height: 25px;
+                text-align: center;
+                font-family: $poppins;
+                margin-bottom: 40px;
+            }
         }
         
+    }
+
+    &-slider {
+        &-choice {
+            padding: 100px 0 120px 140px;
+            background-color: #F9F8F1;
+
+            @include media-breakpoint-down(sm) {
+                padding: 60px 0 0 60px;
+                background-color: transparent;
+            }
+        }
+    }
+
+    &-news {
+        height: 1180px;
+        padding: 110px 0;
+
+        .item-container {
+            position: relative;
+        }
+
+        @include media-breakpoint-down(sm) {
+            height: 630px;
+        }
     }
 }
 
@@ -270,37 +335,10 @@ a {
     }
 }
 
-.tag {
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    left: 0;
-
-    @include media-breakpoint-down(lg) {
-        padding-left: 30px;
-    }
-
-    @include media-breakpoint-down(sm) {
-        position: initial;
-        width: 100%;
-        padding-left: 0;
-    }
-
-    span {
-        color: $brown;
-        font-family: $montserrat;
-        font-size: 12px;
-        font-weight: bold;
-        letter-spacing: 1.5px;
-        line-height: 12px;
-        border-bottom: 1px solid $brown;
-        text-transform: uppercase;
-    }
-}
-
 .innovation {
     &-container {
         justify-content: space-between;
+        align-items: center;
 
         @include media-breakpoint-down(sm) {
             flex-direction: column;
@@ -324,25 +362,35 @@ a {
         }
 
         .btn {
-            padding-left: 100px;
-
             @include media-breakpoint-down(sm) {
                text-align: right;
                display: block;
                padding: 30px 0;
                margin-right: 30px;
-               padding-left: 0;
             }
         }
     }
 
     &-img {
+        margin-left: 60px;
+
+        @include media-breakpoint-down(md) {
+            img {
+                max-width: 90%;
+            }   
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-left: 0;
+        }
+
         @include media-breakpoint-down(sm) {
             width: 280px;
             margin-left: 140px;
 
             img {
                 width: 280px;
+                max-width: 100%;
             }
          }
     }
@@ -350,4 +398,16 @@ a {
 
 .z-index-2 {
     z-index: 2;
+}
+
+.choice-text {
+    .title {
+        padding-top: 100px;
+        margin-top: 0;
+
+        @include media-breakpoint-down(sm) {
+            padding-top: 0;
+            margin-top: 30px;
+        }
+    }
 }
