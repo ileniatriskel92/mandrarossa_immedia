@@ -227,7 +227,9 @@ header {
         transform: translate(-50%, -50%);
 
         @include media-breakpoint-down(sm) {
-            padding: 0 30px;
+            padding: 100px 30px 0;
+            transform: none;
+            position: initial;
         }
     }
 
@@ -312,7 +314,7 @@ header {
                     font-weight: bold;
                     letter-spacing: 1.63px;
                     line-height: 27px;
-                    margin-bottom: 10px;
+                    margin-bottom: 5px;
                 }
             }
 

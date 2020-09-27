@@ -8,7 +8,14 @@ $(document).ready(function(){
 
       $('#choice-slider').slick({
         infinite: false,
-        slidesToShow: 2.8
+        slidesToShow: 2.3,
+        responsive: [{
+          breakpoint: 768,
+          settings: {
+            infinite: false,
+            slidesToShow: 1.3,
+          }
+        }]
       });
 
     $( window ).resize(function()  {
