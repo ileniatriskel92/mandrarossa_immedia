@@ -18,12 +18,6 @@ $(document).ready(function(){
         }]
       });
 
-    /* $( window ).resize(function()  {
-        var windowWidth = $( window ).width();
-        if (windowWidth <= 376) {
-        }
-    }); */
-
     $('.js-menuToggleClass').click(function() {
       $('.js-menu').toggleClass('open');
       $('.js-header').toggleClass('menu-open');
