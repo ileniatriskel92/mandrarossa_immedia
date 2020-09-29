@@ -13,8 +13,12 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 60px 60px 0;
+    padding: 0 60px;
     height: 100px;
+
+    @include media-breakpoint-down(sm) {
+        height: 70px;
+    }
 
     .darkHeader & {
         padding: 0 60px;
@@ -176,8 +180,8 @@ header {
 
             .menu-open & {
                 @include media-breakpoint-down(sm) {
-                    display: block;
                     width: 155px !important;
+                    display: block;
                 }
             }
 
@@ -187,6 +191,10 @@ header {
                 img {
                     width: 240px;
                 }
+            }
+
+            .darkHeader.menu-open & {
+                display: none;
             }
         }
     }
@@ -225,6 +233,10 @@ header {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        @include media-breakpoint-down(md) {
+            max-width: 670px;
+        }
 
         @include media-breakpoint-down(sm) {
             padding: 100px 30px 0;
@@ -379,6 +391,10 @@ header {
     transition: transform .5s ease-in-out .5s;
     transform-origin: 0% 0%;
     transform: scaleY(0);
+
+    @include media-breakpoint-down(sm) {
+        height: 70px;
+    }
 
     &.active {
         transition: transform .5s ease-in-out;

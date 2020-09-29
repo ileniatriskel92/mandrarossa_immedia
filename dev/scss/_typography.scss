@@ -134,7 +134,11 @@
   position: absolute;
   top: 0;
   z-index: 1;
-  left: 6%;
+  left: -4%;
+
+  @include media-breakpoint-down(lg) {
+    left: 4%;
+  }
 
   &.white {
     span {

@@ -96,7 +96,10 @@
   position: absolute;
   top: 0;
   z-index: 1;
-  left: 6%; }
+  left: -4%; }
+  @media (max-width: 1440.98px) {
+    .tag {
+      left: 4%; } }
   .tag.white span {
     color: #ffffff;
     border-bottom: 1px solid #ffffff; }
@@ -464,8 +467,11 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 60px 60px 0;
+  padding: 0 60px;
   height: 100px; }
+  @media (max-width: 767.98px) {
+    .nav {
+      height: 70px; } }
   .darkHeader .nav {
     padding: 0 60px; }
     @media (max-width: 767.98px) {
@@ -591,12 +597,14 @@ header {
       display: none; }
       @media (max-width: 767.98px) {
         .menu-open .nav-logo_black {
-          display: block;
-          width: 155px !important; } }
+          width: 155px !important;
+          display: block; } }
       .darkHeader .nav-logo_black {
         display: block; }
         .darkHeader .nav-logo_black img {
           width: 240px; }
+      .darkHeader.menu-open .nav-logo_black {
+        display: none; }
 
 .menu {
   position: fixed;
@@ -626,6 +634,9 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    @media (max-width: 991.98px) {
+      .menu-wrapper {
+        max-width: 670px; } }
     @media (max-width: 767.98px) {
       .menu-wrapper {
         padding: 100px 30px 0;
@@ -755,6 +766,9 @@ header {
   transition: transform .5s ease-in-out .5s;
   transform-origin: 0% 0%;
   transform: scaleY(0); }
+  @media (max-width: 767.98px) {
+    .background-header {
+      height: 70px; } }
   .background-header.active {
     transition: transform .5s ease-in-out;
     transform: scaleY(1);
@@ -787,11 +801,19 @@ header {
     #news-slider .title-slider, #news-slider .btn {
       padding-left: 15px; } }
 
+@media (max-width: 767.98px) {
+  #news-slider .title-slider {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    line-height: 30px; } }
+
 #news-slider .slick-slide {
   margin: 0 10px; }
   @media (max-width: 767.98px) {
     #news-slider .slick-slide {
-      padding: 0 !important; } }
+      padding: 0 !important;
+      margin: 20px 10px 5px; } }
   #news-slider .slick-slide .item-img {
     margin: 0; }
 
@@ -876,6 +898,9 @@ header {
     font-size: 14px;
     letter-spacing: 0.35px;
     line-height: 14px; }
+    @media (max-width: 767.98px) {
+      .footer-container span {
+        line-height: 24px; } }
   .footer-container .company {
     align-items: end; }
     @media (max-width: 767.98px) {

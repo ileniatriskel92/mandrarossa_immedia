@@ -21,6 +21,10 @@
             font-size: 14px;
             letter-spacing: 0.35px;
             line-height: 14px;
+
+            @include media-breakpoint-down(sm) {
+                line-height: 24px;
+            }
         }
 
         .company {
