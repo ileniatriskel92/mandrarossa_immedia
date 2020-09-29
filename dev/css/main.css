@@ -605,6 +605,9 @@ header {
           width: 240px; }
       .darkHeader.menu-open .nav-logo_black {
         display: none; }
+        @media (max-width: 767.98px) {
+          .darkHeader.menu-open .nav-logo_black {
+            display: block; } }
 
 .menu {
   position: fixed;
@@ -962,6 +965,6 @@ header {
       .link-en {
         display: block !important;
         text-align: right;
-        padding-right: 23% !important; } }
+        padding-right: 10% !important; } }
 
 /*# sourceMappingURL=main.css.map */
